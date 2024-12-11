@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	background: url(/MyWeb/Gp.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.menu {
+	background-color: rgb(58, 37, 37);
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+}
+.logo {
+	width: 350px;
+	height: 120px;
+}
+
+.menu ul {
+	list-style: none;
+	display: flex;
+}
+.menu ul li {
+	padding: 10px 30px;
+	position: relative;
+}
+.menu ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: all 0.9s;
+}
+.menu ul li a:hover {
+	color: ghostwhite;
+}
+.dropdown {
+	display: none;
+}
+.menu ul li:hover .dropdown {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: rgb(58, 37, 37);
+}
+.menu ul li:hover .dropdown ul {
+	display: block;
+	margin: 10px;
+}
+.menu ul li:hover .dropdown ul li {
+	width: 180px;
+}
+.about {
+	width: 1200px;
+	max-width: 85%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: rgb(255, 255, 255);
+}
+.container {
+	display: flex; /* Use flexbox for layout */
+	align-items: center; /* Vertically center items */
+  }
+  
+  .pic {
+	height: 400px;
+	width: 300px;
+	margin-right: 20px; /* Add spacing between image and text */
+  }
+  
+  .text {
+	width: 600px; /* Adjust width as needed */
+  }
+  
+  .text h2 {
+	font-size: 100px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-align: left; /* Align text to the left */
+  }
+  
+  .text p {
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	text-align: left; /* Align text to the left */
+  }

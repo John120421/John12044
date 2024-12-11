@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	background: url(/MyWeb/Gp.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.menu {
+	background-color: rgb(58, 37, 37);;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+}
+.logo {
+	width: 350px;
+	height: 120px;
+}
+
+.menu ul {
+	list-style: none;
+	display: flex;
+}
+.menu ul li {
+	padding: 10px 30px;
+	position: relative;
+}
+.menu ul li a {
+	color: rgb(245, 245, 245);
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: all 0.9s;
+}
+.menu ul li a:hover {
+	color: ghostwhite;
+}
+.dropdown {
+	display: none;
+}
+.menu ul li:hover .dropdown {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: rgb(58, 37, 37);
+}
+.menu ul li:hover .dropdown ul {
+	display: block;
+	margin: 10px;
+}
+.menu ul li:hover .dropdown ul li {
+	width: 180px;
+}
+
+
+.contact-menu {
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.contact-form {
+	max-width: 700px;
+	margin-right: 50px;
+}
+.contact-form h1 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	align-items: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.contact-form .text-box {
+	background-color: rgb(58, 37, 37);;
+	color: black;
+	border: none;
+	width: 335px;
+	height: 50px;
+	padding: 20px;
+	font-size: 16px;
+	margin-bottom: 5px;
+	opacity: 0.9;
+}
+.contact-form .text-box:first-child {
+	margin-right: 25px;
+}
+.contact-form textarea {
+	background-color: rgb(58, 37, 37);;
+	color: whitesmoke;
+	border: none;
+	width: 100%;  
+	padding: 12px;
+	font-size: 15px;
+	min-height: 200px;
+	max-height: 400px;
+	margin-bottom: 5px;
+	opacity: 0.9;
+}
+.contact-form .send-btn {
+	background-color: rgb(58, 37, 37);;
+	color: whitesmoke;
+	border: none;
+	width: 700px;
+	height: 35px;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: normal;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.contact-form .send-btn:hover {
+	background: whitesmoke;
+}
+.welcome h1 {
+	color:  rgb(255, 255, 255);
+	font-size: 30px;
+	text-align: center;
+	padding: 40px;
+}
+.welcome p {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+}

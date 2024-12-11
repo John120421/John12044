@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	background: url(/MyWeb/Gp.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.menu 
+{	background-color: rgb(58, 37, 37);
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+}
+.logo {
+	width: 350px;
+	height: 120px;
+}
+
+.menu ul {
+	list-style: none;
+	display: flex;
+}
+.menu ul li {
+	padding: 10px 30px;
+	position: relative;
+}
+.menu ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: all 0.9s;
+}
+.menu ul li a:hover {
+	color: ghostwhite;
+}
+.dropdown {
+	display: none;
+}
+.menu ul li:hover .dropdown {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: rgb(58, 37, 37);
+}
+.menu ul li:hover .dropdown ul {
+	display: block;
+	margin: 10px;
+}
+.menu ul li:hover .dropdown ul li {
+	width: 180px;
+}
+.welcome {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  position: absolute; /* Keep absolute positioning */
+  width: 100%;
+  top: 35%;
+  font-family: sans-serif;
+}
+
+.welcome h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 10px; /* Add some space between heading and paragraph */
+}
+
+.welcome p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center; /* Keep text alignment centered */
+}
